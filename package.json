@@ -1,6 +1,6 @@
 {
   "name": "presets-lint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,12 +23,12 @@
   "homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
   "devDependencies": {
     "eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-import-resolver-typescript": "^2.7.1",
-		"eslint-plugin-import": "^2.26.0",
-		"eslint-plugin-react": "^7.26.1",
-		"eslint-plugin-react-hooks": "^4.4.0",
-		"eslint-plugin-simple-import-sort": "^7.0.0",
-		"eslint-plugin-unicorn": "^40.0.0"
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "eslint-plugin-unicorn": "^40.0.0"
   }
 }
