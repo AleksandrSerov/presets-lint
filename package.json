@@ -1,5 +1,5 @@
 {
-  "name": "presets-lint",
+  "name": "@sserov/presets-lint",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
