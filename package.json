@@ -1,47 +1,109 @@
 {
-  "name": "@sserov/presets-lint",
-  "version": "0.0.4",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "release:patch": "npm version patch -m 'chore(*): patch version'",
-    "release:minor": "npm version minor -m 'chore(*): minor version'",
-    "release:major": "npm version major -m 'chore(*): major version'",
-    "postversion": "git push origin master && git push --tags && npm run pub",
-    "pub": "npm publish --access public"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AleksandrSerov/presets-lint.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AleksandrSerov/presets-lint/issues"
-  },
-  "homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
-  "peerDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^40.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-import-resolver-typescript": "^2.7.1",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-react": "^7.26.1",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-unicorn": "^40.0.0"
-  }
+	"name": "@sserov/presets-lint",
+	"version": "0.0.4",
+	"description": "Fancy linters and formatters for you project",
+	"keywords": [],
+	"homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
+	"bugs": {
+		"url": "https://github.com/AleksandrSerov/presets-lint/issues"
+	},
+	"license": "ISC",
+	"author": "Aleksandr Serov",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/AleksandrSerov/presets-lint.git"
+	},
+	"scripts": {
+		"test": "yarn test:eslint && yarn test:stylelint",
+		"test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
+		"test:stylelint": "stylelint **/*.css",
+		"release:patch": "npm version patch -m 'chore(*): patch version'",
+		"release:minor": "npm version minor -m 'chore(*): minor version'",
+		"release:major": "npm version major -m 'chore(*): major version'",
+		"postversion": "git push origin master && git push --tags && npm run pub",
+		"pub": "npm publish --access public",
+		"postinstall": "npx simple-git-hooks"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.2.3",
+		"@commitlint/config-conventional": "^16.2.1",
+		"@sserov/eslint-plugin-dirnames": "^1.0.0",
+		"@typescript-eslint/eslint-plugin": "^4.32.0",
+		"@typescript-eslint/parser": "^4.32.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.7.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-react": "^7.26.1",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unicorn": "^40.0.0",
+		"lint-staged": "10.2.13",
+		"prettier": "2.5.1",
+		"prettier-eslint": "^13.0.0",
+		"prettier-eslint-cli": "^5.0.1",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"simple-git-hooks": "^2.7.0",
+		"stylelint": "^14.3.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-standard": "^24.0.0",
+		"stylelint-prettier": "^1.2.0",
+		"typescript": "4.4.4"
+	},
+	"peerDependencies": {
+		"@commitlint/cli": "^16.2.3",
+		"@commitlint/config-conventional": "^16.2.1",
+		"@sserov/eslint-plugin-dirnames": "^1.0.0",
+		"@typescript-eslint/eslint-plugin": "^4.32.0",
+		"@typescript-eslint/parser": "^4.32.0",
+		"eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.7.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-react": "^7.26.1",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unicorn": "^40.0.0",
+		"lint-staged": "10.2.13",
+		"prettier": "2.5.1",
+		"prettier-eslint": "^13.0.0",
+		"prettier-eslint-cli": "^5.0.1",
+		"stylelint": "^14.3.0",
+		"stylelint-config-prettier": "^9.0.3",
+		"stylelint-config-standard": "^24.0.0",
+		"stylelint-prettier": "^1.2.0"
+	},
+	"engines": {
+		"node": ">=16"
+	},
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org/"
+	},
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"prettier-eslint --write"
+		],
+		"stylelint/*.css": [
+			"prettier-eslint --write",
+			"yarn test:stylelint"
+		]
+	},
+	"eslintConfig": {
+		"extends": "./eslint/index.js"
+	},
+	"stylelint": {
+		"extends": "./stylelint/index.js"
+	},
+	"commitlint": {
+		"extends": [
+			"./commitlint/index.js"
+		]
+	},
+	"prettier": "./prettier.js",
+	"simple-git-hooks": {
+		"pre-commit": "npx lint-staged",
+		"commit-msg": "npx commitlint -e"
+	}
 }
