@@ -11,6 +11,9 @@
     "postversion": "git push origin master && git push --tags && npm run pub",
     "pub": "npm publish --access public"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AleksandrSerov/presets-lint.git"
