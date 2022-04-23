@@ -1,10 +1,15 @@
 {
   "name": "presets-lint",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release:patch": "npm version patch -m 'chore(*): patch version'",
+    "release:minor": "npm version minor -m 'chore(*): minor version'",
+    "release:major": "npm version major -m 'chore(*): major version'",
+    "postversion": "git push origin master && git push --tags && npm run pub",
+    "pub": "npm publish --access public"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,15 @@
   "bugs": {
     "url": "https://github.com/AleksandrSerov/presets-lint/issues"
   },
-  "homepage": "https://github.com/AleksandrSerov/presets-lint#readme"
+  "homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
+  "devDependencies": {
+    "eslint": "^7.32.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-import-resolver-typescript": "^2.7.1",
+		"eslint-plugin-import": "^2.26.0",
+		"eslint-plugin-react": "^7.26.1",
+		"eslint-plugin-react-hooks": "^4.4.0",
+		"eslint-plugin-simple-import-sort": "^7.0.0",
+		"eslint-plugin-unicorn": "^40.0.0"
+  }
 }
