@@ -58,7 +58,8 @@ And add them to your project as dev dependency.
 {
 	"lint-staged": {
 		"**/*.{js,jsx,ts,tsx}": [
-			"prettier-eslint --write"
+			"prettier-eslint --write",
+            "eslint",
 		],
 		"**/*.css": [
 			"prettier-eslint --write",
