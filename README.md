@@ -56,10 +56,15 @@ And add them to your project as dev dependency.
 
 ```json
 {
-    "lint-staged": {
-        "{src,config}/**/*.{js,jsx,ts,tsx}": ["prettier-eslint --write", "eslint"],
-        "*.css": ["prettier-eslint --write", "stylelint"]
-    },
+	"lint-staged": {
+		"**/*.{js,jsx,ts,tsx}": [
+			"prettier-eslint --write"
+		],
+		"**/*.css": [
+			"prettier-eslint --write",
+			"yarn test:stylelint"
+		]
+	},
    	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged",
 		"commit-msg": "npx commitlint -e"

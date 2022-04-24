@@ -85,7 +85,7 @@
 		"**/*.{js,jsx,ts,tsx}": [
 			"prettier-eslint --write"
 		],
-		"stylelint/*.css": [
+		"**/*.css": [
 			"prettier-eslint --write",
 			"yarn test:stylelint"
 		]
