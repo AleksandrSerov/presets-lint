@@ -63,7 +63,7 @@ And add them to your project as dev dependency.
 		],
 		"**/*.css": [
 			"prettier-eslint --write",
-			"yarn test:stylelint"
+			"stylelint"
 		]
 	},
    	"simple-git-hooks": {
