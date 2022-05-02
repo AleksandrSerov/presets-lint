@@ -18,11 +18,14 @@
 		"test": "yarn test:eslint && yarn test:stylelint",
 		"test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
 		"test:stylelint": "stylelint **/*.css",
+		"build": "esbuild ./commitlint/index.js ./eslint/index.js ./stylelint/index.js prettier.js --outdir=.publish --outbase=. && cp package.json .publish",
+		"release:beta": "yarn build && node ./scripts/set-beta-version.mjs && yarn pub:beta",
 		"release:patch": "npm version patch -m 'chore(*): patch version'",
 		"release:minor": "npm version minor -m 'chore(*): minor version'",
 		"release:major": "npm version major -m 'chore(*): major version'",
 		"postversion": "git push origin master && git push --tags && npm run pub",
 		"pub": "npm publish --access public",
+		"pub:beta": "npm publish .publish --access public --tag beta",
 		"postinstall": "npx simple-git-hooks"
 	},
 	"devDependencies": {
@@ -106,5 +109,8 @@
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged",
 		"commit-msg": "npx commitlint -e"
+	},
+	"dependencies": {
+		"esbuild": "^0.14.38"
 	}
 }
