@@ -18,7 +18,7 @@
 		"test": "yarn test:eslint && yarn test:stylelint",
 		"test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
 		"test:stylelint": "stylelint **/*.css",
-		"build": "esbuild ./commitlint/index.js ./eslint/index.js ./stylelint/index.js prettier.js --outdir=.publish --outbase=. && copy:package.json",
+		"build": "esbuild ./commitlint/index.js ./eslint/index.js ./stylelint/index.js prettier.js --outdir=.publish --outbase=. && yarn copy:package.json",
 		"copy:package.json": "cp ./package.json .publish/package.json",
 		"release:beta": "yarn build && node ./scripts/set-beta-version.mjs && yarn pub:beta",
 		"release:patch": "yarn build && yarn standard-version --release-as patch && yarn copy:package.json && yarn pub",
