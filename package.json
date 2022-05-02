@@ -1,6 +1,6 @@
 {
 	"name": "@sserov/presets-lint",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"description": "Fancy linters and formatters for you project",
 	"keywords": [],
 	"homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
