@@ -24,8 +24,7 @@
 		"release:patch": "yarn build && yarn standard-version --release-as patch && yarn copy:package.json && yarn pub",
 		"release:minor": "yarn build && yarn standard-version --release-as minor && yarn copy:package.json && yarn pub",
 		"release:major": "yarn build && yarn standard-version --release-as major && yarn copy:package.json && yarn pub",
-		"postversion": "git push origin master && git push --tags && npm run pub",
-		"pub": "npm publish .publish --access public",
+		"pub": "npm publish .publish --access public && git push --follow-tags origin master",
 		"pub:beta": "npm publish .publish --access public --tag beta",
 		"postinstall": "npx simple-git-hooks"
 	},
