@@ -106,6 +106,7 @@ module.exports = {
 		'arrow-body-style': ['error', 'as-needed'],
 		curly: ['error', 'all'],
 		eqeqeq: ['error'],
+		'func-style': ['error', 'expression'],
 		indent: ['error', 'tab', { SwitchCase: 1 }],
 		'no-unneeded-ternary': ['error'],
 		'arrow-spacing': ['error'],
@@ -136,6 +137,13 @@ module.exports = {
 			},
 		],
 		'quote-props': ['error', 'as-needed'],
+		'no-restricted-syntax': [
+			'error',
+			{
+				selector: 'MemberExpression[object.name=\'React\']',
+				message: 'Don\'t call things from React with dot notaion. Import module itself',
+			},
+		],
 
 		// Code smells
 		complexity: ['warn', 20],
