@@ -76,7 +76,8 @@
 		"stylelint-prettier": "^1.2.0"
 	},
 	"engines": {
-		"node": ">=16"
+		"node": ">=16",
+		"yarn": ">=1.22.11"
 	},
 	"publishConfig": {
 		"registry": "https://registry.npmjs.org/"

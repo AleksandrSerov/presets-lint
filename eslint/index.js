@@ -47,6 +47,7 @@ module.exports = {
 		// React
 		'react/jsx-closing-bracket-location': ['error'],
 		'react/jsx-curly-brace-presence': ['error', 'never'],
+		'react/react-in-jsx-scope': 'off',
 		'react/jsx-curly-spacing': ['error', 'always'],
 		'react/jsx-fragments': ['error', 'element'],
 		'react/prop-types': 'off',
