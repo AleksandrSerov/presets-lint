@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.9](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.8...v0.0.9) (2022-05-03)
+
+
+### Features
+
+* **build:** move configs to new paths ([e7384cc](https://github.com/AleksandrSerov/presets-lint/commit/e7384cc32432afc4016c3d476200c70664d460b0))
+
+
+### Bug Fixes
+
+* **scripts:** fix pub ([62214a3](https://github.com/AleksandrSerov/presets-lint/commit/62214a38688b8964688ddb543470504cfaa41506))
+
 ### [0.0.8](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.7...v0.0.8) (2022-05-02)
 
 
