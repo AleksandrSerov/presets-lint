@@ -18,7 +18,7 @@
 		"test": "yarn test:eslint && yarn test:stylelint",
 		"test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
 		"test:stylelint": "stylelint **/*.css",
-		"build": "esbuild ./commitlint/index.js ./eslint/index.js ./stylelint/index.js prettier.js --outdir=.publish --outbase=. && yarn copy:package.json",
+		"build": "esbuild ./src/commitlint ./src/eslint ./src/stylelint ./src/prettier --outdir=.publish && yarn copy:package.json",
 		"copy:package.json": "cp ./package.json .publish/package.json",
 		"release:beta": "yarn build && node ./scripts/set-beta-version.mjs && yarn pub:beta",
 		"release:patch": "yarn build && yarn standard-version --release-as patch && yarn copy:package.json && yarn pub",
@@ -96,17 +96,17 @@
 		]
 	},
 	"eslintConfig": {
-		"extends": "./eslint/index.js"
+		"extends": "./src/eslint/index.js"
 	},
 	"stylelint": {
-		"extends": "./stylelint/index.js"
+		"extends": "./src/stylelint/index.js"
 	},
 	"commitlint": {
 		"extends": [
-			"./commitlint/index.js"
+			"./src/commitlint/index.js"
 		]
 	},
-	"prettier": "./prettier.js",
+	"prettier": "./src/prettier/index.js",
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged",
 		"commit-msg": "npx commitlint -e"

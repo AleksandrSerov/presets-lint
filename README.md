@@ -28,15 +28,15 @@ And add them to your project as dev dependency.
 
 ```json
 {
-    "prettier": "@sserov/presets-lint/prettier",
+    "prettier": "./node_modules/@sserov/presets-lint/prettier.js",
     "eslintConfig": {
-        "extends": "./node_modules/@sserov/presets-lint/eslint/index.js"
+        "extends": "./node_modules/@sserov/presets-lint/eslint.js"
     },
     "stylelint": {
-        "extends": "@sserov/presets-lint/stylelint"
+        "extends": "./node_modules/@sserov/presets-lint/stylelint.js"
     },
     "commitlint": {
-        "extends": ["./node_modules/@sserov/presets-lint/commitlint"]
+        "extends": ["./node_modules/@sserov/presets-lint/commitlint.js"]
     }
 }
 ```
