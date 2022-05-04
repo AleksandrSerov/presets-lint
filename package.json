@@ -77,7 +77,8 @@
 		"stylelint": "^14.3.0",
 		"stylelint-config-prettier": "^9.0.3",
 		"stylelint-config-standard": "^24.0.0",
-		"stylelint-prettier": "^1.2.0"
+		"stylelint-prettier": "^1.2.0",
+		"simple-git-hooks": "^2.7.0"
 	},
 	"engines": {
 		"node": ">=16",
