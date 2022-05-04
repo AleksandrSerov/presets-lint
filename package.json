@@ -1,6 +1,6 @@
 {
 	"name": "@sserov/presets-lint",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"description": "Fancy linters and formatters for you project",
 	"keywords": [],
 	"homepage": "https://github.com/AleksandrSerov/presets-lint#readme",
@@ -26,7 +26,7 @@
 		"release:major": "yarn build && yarn standard-version --release-as major && yarn copy:package.json && yarn pub",
 		"pub": "npm publish .publish --access public && git push --follow-tags origin master",
 		"pub:beta": "npm publish .publish --access public --tag beta",
-		"postinstall": "npx simple-git-hooks"
+		"install:hooks": "npx simple-git-hooks"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^16.2.3",
