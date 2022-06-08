@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.11](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.10...v0.0.11) (2022-06-08)
+
+
+### Features
+
+* add base tsconfig to build ([ccc2c5c](https://github.com/AleksandrSerov/presets-lint/commit/ccc2c5cf75f08dfe008137692ef92024c3efcaab))
+* **eslint:** add object-shorthand rule ([aae86e6](https://github.com/AleksandrSerov/presets-lint/commit/aae86e6ff57994832d50cf81b40a94e9cd50c849))
+
 ### [0.0.10](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.9...v0.0.10) (2022-05-04)
 
 
