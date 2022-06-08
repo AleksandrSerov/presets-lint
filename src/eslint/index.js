@@ -137,6 +137,7 @@ module.exports = {
 				next: ['const', 'let', 'var'],
 			},
 		],
+		'object-shorthand': ['error', 'always'],
 		'quote-props': ['error', 'as-needed'],
 		'no-restricted-syntax': [
 			'error',
