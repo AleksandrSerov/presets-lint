@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.11...v0.0.12) (2022-10-01)
+
+
+### Features
+
+* **dependabot:** add ([866e9b5](https://github.com/AleksandrSerov/presets-lint/commit/866e9b579cae967dac99d2caa7f203e15f2bca9c))
+
 ### [0.0.11](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.10...v0.0.11) (2022-06-08)
 
 
