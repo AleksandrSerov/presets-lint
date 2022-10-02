@@ -53,7 +53,15 @@ module.exports = {
 		'react/prop-types': 'off',
 		'react/jsx-no-useless-fragment': ['error'],
 		'react/jsx-boolean-value': ['error', 'always'],
-		'react/jsx-space-before-closing': ['error'],
+		'react/jsx-tag-spacing': [
+			'error',
+			{
+				closingSlash: 'never',
+				beforeSelfClosing: 'always',
+				afterOpening: 'never',
+				beforeClosing: 'never',
+			},
+		],
 		'react/self-closing-comp': ['error'],
 		'react/no-array-index-key': ['error'],
 		'react/no-multi-comp': ['error'],
