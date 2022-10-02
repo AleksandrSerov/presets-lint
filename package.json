@@ -114,6 +114,6 @@
 		"commit-msg": "npx commitlint -e"
 	},
 	"dependencies": {
-		"esbuild": "^0.14.38"
+		"esbuild": "^0.15.10"
 	}
 }
