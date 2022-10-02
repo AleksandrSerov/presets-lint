@@ -46,7 +46,7 @@ And add them to your project as dev dependency.
 {
     "scripts": {
         "lint:css": "stylelint ./src/**/*.css",
-        "lint:scripts": "eslint \"**/*.{js,jsx,ts,tsx}\" --ext .js,.jsx,.ts,.tsx",
+        "lint:scripts": "eslint \"**/*.{js,jsx,ts,tsx}\"",
         "lint": "yarn lint:css && yarn lint:scripts",
     }
 }
@@ -59,7 +59,7 @@ And add them to your project as dev dependency.
 	"lint-staged": {
 		"**/*.{js,jsx,ts,tsx}": [
 			"prettier-eslint --write",
-            "eslint"
+			"eslint"
 		],
 		"**/*.css": [
 			"prettier-eslint --write",
