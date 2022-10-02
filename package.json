@@ -30,7 +30,7 @@
 		"install:hooks": "npx simple-git-hooks"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^16.2.3",
+		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
 		"@sserov/eslint-plugin-dirnames": "^1.0.0",
 		"@typescript-eslint/eslint-plugin": "^4.32.0",
@@ -58,7 +58,7 @@
 		"typescript": "4.8.3"
 	},
 	"peerDependencies": {
-		"@commitlint/cli": "^16.2.3",
+		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
 		"@sserov/eslint-plugin-dirnames": "^1.0.0",
 		"@typescript-eslint/eslint-plugin": "^4.32.0",
