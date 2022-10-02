@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.14...v0.0.15) (2022-10-02)
+
+
+### Features
+
+* update deps ([2a52e4f](https://github.com/AleksandrSerov/presets-lint/commit/2a52e4f49f5a51c8e04b81e78a6f0af4cd0f429b))
+
 ### [0.0.14](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.13...v0.0.14) (2022-10-02)
 
 
