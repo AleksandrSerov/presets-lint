@@ -16,7 +16,7 @@
 	},
 	"scripts": {
 		"test": "yarn test:eslint && yarn test:stylelint",
-		"test:eslint": "eslint \"./test/**/*.{ts,tsx,js,jsx}\"",
+		"test:eslint":  "ESLINT_USE_FLAT_CONFIG=true eslint -c ./src/eslint/eslint.config.mjs  \"./test/**/*.{ts,tsx,js,jsx}\"",
 		"test:stylelint": "stylelint **/*.css",
 		"build": "esbuild ./src/commitlint ./src/eslint ./src/stylelint ./src/prettier --outdir=.publish && yarn copy:package.json && yarn copy:tsconfig.json",
 		"copy:package.json": "cp ./package.json .publish/package.json",
@@ -42,7 +42,7 @@
 		"eslint-plugin-react": "^7.31.8",
 		"eslint-plugin-simple-import-sort": "^8.0.0",
 		"eslint-plugin-unicorn": "^44.0.0",
-		"eslint": "^8.24.0",
+		"eslint": "^8.29.0",
 		"lint-staged": "13.0.3",
 		"prettier-eslint-cli": "^7.1.0",
 		"prettier-eslint": "^15.0.1",
