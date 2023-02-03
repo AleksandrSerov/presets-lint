@@ -29,6 +29,9 @@
 		"pub:beta": "npm publish .publish --access public --tag beta",
 		"install:hooks": "npx simple-git-hooks"
 	},
+	"dependencies": {
+		"esbuild": "^0.15.10"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",
 		"@commitlint/config-conventional": "^17.1.0",
@@ -82,7 +85,7 @@
 		"stylelint": "^14.3.0"
 	},
 	"engines": {
-		"node": ">=16",
+		"node": ">=18",
 		"yarn": ">=1.22.11"
 	},
 	"publishConfig": {
@@ -112,8 +115,5 @@
 	"simple-git-hooks": {
 		"pre-commit": "npx lint-staged",
 		"commit-msg": "npx commitlint -e"
-	},
-	"dependencies": {
-		"esbuild": "^0.15.10"
 	}
 }
