@@ -1,4 +1,7 @@
-
+<h1 align="center">@sserov/presets-lint</h1>
+<p align="center">
+  <img src="./logo.png" width="300" alt="Logo">
+</p>
 
 ## Installation
 To install all project dependencies, it is recommended to use [install-peerdeps](https://github.com/nathanhleung/install-peerdeps)
