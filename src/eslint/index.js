@@ -15,6 +15,8 @@ module.exports = {
 		'plugin:import/recommended',
 
 		'prettier',
+
+		'plugin: jest/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -25,7 +27,14 @@ module.exports = {
 		ecmaVersion: 12,
 		sourceType: 'module',
 	},
-	plugins: ['react', '@typescript-eslint', 'simple-import-sort', 'unicorn', '@sserov/dirnames'],
+	plugins: [
+		'react',
+		'@typescript-eslint',
+		'simple-import-sort',
+		'unicorn',
+		'@sserov/dirnames',
+		'jest',
+	],
 	settings: {
 		react: {
 			version: 'detect',
@@ -150,35 +159,12 @@ module.exports = {
 		'no-restricted-syntax': [
 			'error',
 			{
-				selector: 'MemberExpression[object.name=\'React\']',
-				message: 'Don\'t call things from React with dot notaion. Import module itself',
+				selector: "MemberExpression[object.name='React']",
+				message: "Don't call things from React with dot notaion. Import module itself",
 			},
 		],
 
 		// Code smells
 		complexity: ['warn', 20],
-		'no-restricted-properties': [
-			'error',
-			{
-				object: 'it',
-				property: 'only',
-				message: 'Did you forget to remove \'only\' from this test?',
-			},
-			{
-				object: 'describe',
-				property: 'only',
-				message: 'Did you forget to remove \'only\' from this test?',
-			},
-			{
-				object: 'context',
-				property: 'only',
-				message: 'Did you forget to remove \'only\' from this test?',
-			},
-			{
-				object: 'test',
-				property: 'only',
-				message: 'Did you forget to remove \'only\' from this test?',
-			},
-		],
 	},
 };
