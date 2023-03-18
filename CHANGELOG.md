@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.19](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.18...v0.0.19) (2023-03-18)
+
+
+### Features
+
+* **jest-plugin:** add jest plugin ([d3f56eb](https://github.com/AleksandrSerov/presets-lint/commit/d3f56eba0e8c3660b6ddb6b578b525e36a203943))
+* **node:** migrate to 18 node ([6b24986](https://github.com/AleksandrSerov/presets-lint/commit/6b24986ec7a4337bbeb04fd510a73b4ce587a0e8))
+
 ### [0.0.18](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.17...v0.0.18) (2023-02-03)
 
 ### [0.0.17](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.16...v0.0.17) (2023-01-04)
