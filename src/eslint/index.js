@@ -16,7 +16,7 @@ module.exports = {
 
 		'prettier',
 
-		'plugin: jest/recommended',
+		'plugin:jest/recommended',
 	],
 	parser: '@typescript-eslint/parser',
 	parserOptions: {
@@ -159,8 +159,8 @@ module.exports = {
 		'no-restricted-syntax': [
 			'error',
 			{
-				selector: "MemberExpression[object.name='React']",
-				message: "Don't call things from React with dot notaion. Import module itself",
+				selector: 'MemberExpression[object.name=\'React\']',
+				message: 'Don\'t call things from React with dot notaion. Import module itself',
 			},
 		],
 
