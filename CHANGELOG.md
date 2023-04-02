@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.21](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.20...v0.0.21) (2023-04-02)
+
+
+### Bug Fixes
+
+* **eslint:** fix typo ([b446972](https://github.com/AleksandrSerov/presets-lint/commit/b44697293c5562b20d11145606b68e45e2fdfdaa))
+
 ### [0.0.20](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.19...v0.0.20) (2023-04-02)
 
 ### [0.0.19](https://github.com/AleksandrSerov/presets-lint/compare/v0.0.18...v0.0.19) (2023-03-18)
