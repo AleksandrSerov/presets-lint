@@ -30,7 +30,7 @@
 		"install:hooks": "npx simple-git-hooks"
 	},
 	"dependencies": {
-		"esbuild": "^0.15.10"
+		"esbuild": "^0.19.2"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.1.2",
